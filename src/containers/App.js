@@ -28,7 +28,7 @@ class App extends React.Component {
             <h1>Loading...</h1> :  
             (
                 <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
+                    <h1 className='f1'>Cut Cat Friends</h1>
                     <SearchBox search = {this.searchThings} />
                     <Scroll>
                         <CardList robots={filteredRobots} />    
@@ -36,7 +36,7 @@ class App extends React.Component {
                 </div>
             )
     }
-
+    
     //3rd step
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users')
